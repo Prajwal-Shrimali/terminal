@@ -52,7 +52,7 @@ const Commands = [
     {
         command: 'name',
         description: 'Displays my name.',
-        output: 'Prajwal Shrimali'
+        output: 'name'
     },
     {
         command: 'about-me',
