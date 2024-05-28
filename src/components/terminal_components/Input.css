@@ -1,0 +1,55 @@
+.terminal-input-container {
+    position: relative;
+    display: flex;
+    width: 50%;
+    background-color: transparent;
+    align-items: center;
+}
+
+.path-variable {
+    margin: 0;
+    padding: 0;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.terminal-input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    caret-color: transparent;
+    margin: 0;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.custom-caret {
+    position: absolute;
+    background-color: #33FF33;
+    width: 10px; /* Match the width to font size */
+    height: 20px; /* Match the height to font size */
+    top: 50%;
+    transform: translateY(-50%);
+    animation: blink 1s step-end infinite;
+    pointer-events: none;
+    z-index: 0;
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    50.1%, 100% {
+        opacity: 0;
+    }
+}
